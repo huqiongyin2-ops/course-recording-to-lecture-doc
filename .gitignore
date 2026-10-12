@@ -1,0 +1,18 @@
+# Runtime and generated course data
+temp_data/
+*.mp4
+*.mov
+*.mkv
+*.m4a
+*.mp3
+*.wav
+*.srt
+*.vtt
+*.zip
+
+# Python and OS files
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.vscode/

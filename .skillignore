@@ -1,0 +1,19 @@
+# Skill runtime artifacts
+*.zip
+.idea/
+__pycache__/
+*/__pycache__/
+*.pyc
+.aime/.setup_status
+temp_data/
+*/temp_data/
+.DS_Store
+*.mp4
+*.mov
+*.mkv
+*.m4a
+*.mp3
+*.wav
+*.srt
+*.vtt
+board_candidates/
