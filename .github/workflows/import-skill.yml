@@ -177,7 +177,7 @@ jobs:
       - name: Import validated skill
         run: |
           set -euo pipefail
-          printf '%s' "$SKILL_ARCHIVE" | base64 -d > /tmp/skill.zip
+          printf '%s' "$SKILL_ARCHIVE" | tr -d '[:space:]' | base64 -d > /tmp/skill.zip
           unzip -q /tmp/skill.zip -d /tmp/skill
           cp -a /tmp/skill/. .
           git config user.name "github-actions[bot]"
