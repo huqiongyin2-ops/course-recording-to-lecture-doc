@@ -10,8 +10,10 @@
 - 保守清理 SRT、VTT 或纯文本逐字稿。
 - 将 PDF 课件渲染为逐页图片。
 - 对视频定时采样，通过画面变化生成板书候选帧。
+- 检测稳定的 PPT、动画完成态和现场演示镜头，并生成带编号、时间戳的联系表供人工复核。
 - 支持用 ROI 只分析黑板区域，降低 PPT 翻页和人物走动误报。
-- 指导 Agent 对齐逐字稿、课件和板书时间戳并生成飞书笔记。
+- 指导 Agent 对齐逐字稿、课件、板书和演示时间戳，以图文左右或多图分栏生成飞书笔记。
+- 非中文课程可整理成中文笔记，并保留术语、公式、代码和时间信息。
 
 ## 安装
 
@@ -53,7 +55,9 @@ python3 /path/to/aime-skill-creator/scripts/quick_validate.py \
   user_skills/course-recording-to-lecture-doc
 ```
 
-各脚本均支持 `--help`。完整工作流和参数说明见 [SKILL.md](SKILL.md)，板书筛选准则见 [references/visual-preservation.md](references/visual-preservation.md)。
+各脚本均支持 `--help`。完整工作流和参数说明见 [SKILL.md](SKILL.md)，板书筛选准则见 [references/visual-preservation.md](references/visual-preservation.md)，图文排版见 [references/lecture-doc-layout.md](references/lecture-doc-layout.md)。
+
+稳定镜头检测、联系表复核和图文布局思路来自 `event-video-recap` 1.0.0，并于 2026-10-14 按课程场景改写；本仓库不依赖其安装目录、示例数据或内部脚本。
 
 ## 隐私提示
 

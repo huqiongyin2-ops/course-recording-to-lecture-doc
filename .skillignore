@@ -17,3 +17,5 @@ temp_data/
 *.srt
 *.vtt
 board_candidates/
+scene_shots/
+contact_sheets/

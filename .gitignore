@@ -9,6 +9,8 @@ temp_data/
 *.srt
 *.vtt
 *.zip
+scene_shots/
+contact_sheets/
 
 # Python and OS files
 __pycache__/
